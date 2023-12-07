@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Oauth</title>
+</head>
+
+<body>
+    <button id="google-auth-btn">Google</button>
+</body>
+
+</html>
+<script>
+    const googleAuthBtn = document.getElementById('google-auth-btn');
+
+    googleAuthBtn.addEventListener('click', () => {
+        const authLink = 'http://localhost:3000/auth/google';
+        window.location.href = authLink;
+    });
+</script>
